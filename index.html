@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="w-50 mx-auto">
+            <h1 class="fs-1 fw-bold mb-5 text-center">Product manegment system</h1>
+            <div class="form-groub mb-5">
+                <label for="productName">Product name</label>
+                <input type="text" id="productName" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+                <label for="productprice">product price</label>
+                <input type="number" id="productprice" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+                <label for="productdesc">product desc</label>
+                <input type="text" id="productdesc" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+                <label for="productcat">product category</label>
+                <input type="text" id="productcat" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+                <button class="btn btn-outline-info" id="mainBtn" onclick="addproduct()">add product</button>
+            </div>
+            <div class="mb-4">
+                <label for="">serach</label>
+                <input type="text" class="form-control" onkeyup="search(this.value)">
+            </div>
+            <div class="">
+                <table class="table text-center">
+                    <thead>
+                        <th>index</th>
+                        <th>product Name</th>
+                        <th>product price</th>
+                        <th>categoty</th>
+                        <th>desc</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="data">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
